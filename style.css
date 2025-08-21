@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    /* list-style: none; */
+}
+
+body{
+    /* background: linear-gradient( to right , black, rgb(3, 27, 84)); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+}
+
+aside{
+    border-right: 2px solid gold;
+}
+
+/* Text Shadow */
+.a1,
+h1{
+    text-shadow: 0 0 15px gold, 0 0 30px gold;
+    color: gold;
+}
+h2,
+h3{
+    text-shadow: 0 0 15px gold, 0 0 30px gold;
+    color: gold;
+    font-size: 23px;
+    padding: 12PX 0 5PX 0;
+}
+p{
+    color: white;
+    font-size: 16px;
+}
+ol,
+ul{
+    color: white;
+    font-size: 16px;
+}
+.a1:hover{
+    text-shadow: none;
+    border: 2px dashed ;
+}
+
+.img{
+    transition: 1s;
+}
+.img:hover{
+    transform: scaleX(1.2);
+}
+
+footer{
+    border-top: 2px gold solid;
+    padding: 10px;
+}
+
+.hr{
+    color: gold;
+    font-size: 30px;
+}
+
+h1::before{
+    content: "|";
+    animation: title 5s infinite 3s ;
+    color: gold;
+}
+@keyframes title{
+    0%{
+        content: "|";
+    }
+    10%{
+        content: "𓅓|";
+    }
+    20%{
+        content: "𓅓𓈖|";
+    }
+    30%{
+        content: "𓅓𓈖𓄿|";
+    }
+    40%{
+        content: "𓅓𓈖𓄿𓂋|";
+    }
+    50%{
+        content: "𓅓𓈖𓄿𓂋 |";
+    }
+    60%{
+        content: "𓅓𓈖𓄿𓂋 𓅓|";
+    }
+    70%{
+        content: "𓅓𓈖𓄿𓂋 𓅓𓎼|";
+    }
+    80%{
+        content: "𓅓𓈖𓄿𓂋 𓅓𓎼𓂧|";
+    }
+    90%{
+        content: "𓅓𓈖𓄿𓂋 𓅓𓎼𓂧𓇋|";
+    }
+    100%{
+        content: "|";
+    }
+}
+
+/* Button */
+.btn1{
+    width: 10em;
+    height: 3em;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid gold;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 15px white, 0 0 30px white;
+    margin-top: 20px;
+    transition: 2s;
+    &:hover{
+        background-color: rgba(255, 217, 0, 0.316);
+    }
+}
+
+.shadow_card{
+    transition: 0.5s;
+    &:hover{
+        transform: translateY(-7px);
+        /* box-shadow: 5px 5px 15px rgb(184, 162, 21); */
+    }
+}
+
+.visit{
+    color: white;
+    text-shadow: 0 0 15px white, 0 0 25px white;
+}
+
+.img2{
+    background-image: url(./images/bg4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.lay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(107, 107, 107, 0.233);
+}
+.f{
+    border-top: 2px solid rgba(255, 217, 0, 0.293);
+}
+.fa-brands{
+    transition: 0.3s;
+    &:hover{
+        color: white;
+        box-shadow: 0 0 30px 2px white;
+    }
+}
+
+.personal{
+    border: 2px solid gold;
+}
+.bar{
+    transition: 0.5s;
+    transform: translateX(-200%); 
+}
+.bar.active{
+    transform: translateX(0);
+}
